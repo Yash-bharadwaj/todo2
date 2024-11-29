@@ -1,0 +1,206 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 90%;
+    max-width: 600px;
+}
+
+h1 {
+    color: #4a5568;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 1rem;
+    border-radius: 8px; /* Rounded corners for the input area */
+    overflow: hidden; /* Clip the corners of the input and button */
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 0.75rem; /* Increased padding for a more premium feel */
+    border: none; /* Remove default border */
+    border-radius: 8px 0 0 8px; /* Rounded left corners */
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.2); /* Glass effect */
+    backdrop-filter: blur(10px); /* Glass effect */
+    transition: background 0.3s ease, transform 0.3s ease; /* Transition for effects */
+}
+
+input[type="text"]:hover, 
+input[type="text"]:focus {
+    background: rgba(255, 255, 255, 0.4); /* Lighter glass effect on hover/focus */
+    transform: scale(1.02); /* Slight scaling effect */
+}
+
+button {
+    background-color: #4299e1;
+    color: white;
+    border: none;
+    padding: 0.75rem 1rem; /* Increased padding */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for effects */
+    border-radius: 0 8px 8px 0; /* Rounded right corners */
+}
+
+button:hover {
+    background-color: #3182ce;
+    transform: scale(1.05); /* Slight scaling effect */
+}
+
+.lists-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.list {
+    flex: 1;
+    background-color: #f7fafc;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+h2 {
+    color: #4a5568;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.task-actions button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+}
+
+.complete-btn {
+    color: #48bb78;
+}
+
+.edit-btn {
+    color: #4299e1;
+}
+
+.delete-btn {
+    color: #f56565;
+}
+
+
+
+/* Rolling animation */
+@keyframes roll-in {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+  
+@keyframes roll-out {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+}
+
+@keyframes slide-in {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+@keyframes slide-out {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+}
+  
+#quoteContainer {
+    display: inline-block;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+.footer {
+    color: black;
+    text-align: center;
+    padding-top: 30px;
+    
+    
+}
+
+.connect {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .connect a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #333; 
+    transition: color 0.3s ease; 
+  }
+  
+  .linkedin-icon:hover {
+    color: #0077b5; 
+  }
+  
+  .github-icon:hover {
+    color: gray; 
+  }
